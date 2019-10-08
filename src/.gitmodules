@@ -1,0 +1,6 @@
+[submodule "lib/apis"]
+	path = lib/apis
+	url = https://github.com/SpencerSharp/spools-apis
+[submodule "modules/music"]
+	path = modules/music
+	url = https://github.com/SpencerSharp/spools-music
