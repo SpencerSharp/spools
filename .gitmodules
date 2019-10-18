@@ -1,3 +1,9 @@
 [submodule "src/main/modules/music"]
 	path = src/main/modules/music
 	url = https://github.com/SpencerSharp/spools-music
+[submodule "src/main/modules/learn"]
+	path = src/main/modules/learn
+	url = https://github.com/SpencerSharp/spools-learn
+[submodule "src/main/modules/vscode"]
+	path = src/main/modules/vscode
+	url = https://github.com/SpencerSharp/spools-vscode.git
