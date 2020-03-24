@@ -7,3 +7,12 @@
 [submodule "src/main/modules/vscode"]
 	path = src/main/modules/vscode
 	url = https://github.com/SpencerSharp/spools-vscode.git
+[submodule "ezsample"]
+	path = src/main/modules/ezsample
+	url = https://github.com/SpencerSharp/spools-ezsample.git
+[submodule "ableton"]
+	path = src/main/modules/ableton
+	url = https://github.com/SpencerSharp/spools-ableton.git
+[submodule "src/main/spools/latex"]
+	path = src/main/spools/latex
+	url = https://github.com/SpencerSharp/spools-latex
