@@ -1,3 +1,5 @@
+import pkg_resources
+pkg_resources.declare_namespace(__name__)
 import os
 from spools.filesys.file import File, get_path
 

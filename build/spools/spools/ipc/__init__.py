@@ -1,3 +1,5 @@
+import pkg_resources
+pkg_resources.declare_namespace(__name__)
 import os, signal, sys
 from spools import filesys
 def send_signal(pid, sig):

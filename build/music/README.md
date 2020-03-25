@@ -1,0 +1,1 @@
+This is a command line interface for Spotify. It focuses on 

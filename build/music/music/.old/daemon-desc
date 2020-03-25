@@ -1,0 +1,44 @@
+class 
+
+class CLI()
+    moduledaemon
+    submodules
+    commands
+
+class DaemonManager()
+
+class ModuleDaemon()
+    
+
+class Daemon()
+    module_file
+    personal_file
+    has_been_created()
+    initialize()
+    message_daemon()
+    message_terminal()
+
+
+class MonitorDaemon()
+    mode
+    runner
+    prev_state
+    cur_state
+
+    set_mode()
+    watch()
+    update_state()
+    message_runner()
+
+class SpotifyDaemon()
+    state = spotify.track_id()
+
+class RunnerDaemon()
+    regex_filter
+
+    read_message()
+    prompt_user():
+
+    run()
+    sleep():
+    signal.pause()

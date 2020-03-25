@@ -1,3 +1,5 @@
+import pkg_resources
+pkg_resources.declare_namespace(__name__)
 import os, signal, sys, time, logging, http.server, socketserver, json, datetime, webbrowser
 import requests
 from spools import ipc, filesys
