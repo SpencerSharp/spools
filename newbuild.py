@@ -117,38 +117,4 @@ def reset():
 
     make_module_setup(build_path / 'spools')
     shutil.copy(base / 'README.md', build_path / 'spools' / 'README.md')
-
-    # src_path = base / 'src'
-    # build_path = base / 'build'
-
-
-
-    # build_path.mkdir()
-
-    # old_lib_path = src_path / 'lib'
-    # new_spools_path = build_path / 'spools' / 'spools'
-    # new_spools_path.parent.mkdir()
-
-    # shutil.copytree(old_lib_path, new_spools_path)
-    # shutil.copy(base / 'setup.py', new_spools_path.parent / 'setup.py')
-    # shutil.copy(base / 'README.md', new_spools_path.parent / 'README.md')
-    # # (new_spools_path / '__init__.py').touch()
-    # modules = src_path / 'main' / 'modules'
-    # for module in modules.iterdir():
-    #     new_module_path = build_path / module.name
-    #     shutil.copytree(module, new_module_path)
-    #     # (new_module_path / '__init__.py').touch()
-        
-    #     module_src = new_module_path / 'src'
-    #     module_build = new_module_path / 'build'
-
-    #     if module_build.exists():
-    #         shutil.rmtree(module_build)
-    #     flatten(new_module_path)
-    #     shutil.move(new_module_path, new_module_path.parent / 'tmp')
-    #     new_module_path.mkdir()
-    #     shutil.move(new_module_path.parent / 'tmp', new_module_path / module.name)
-    #     if (new_module_path / module.name / 'setup.py').exists():
-    #         shutil.move(new_module_path / module.name / 'README.md', new_module_path / 'README.md')
-    #         shutil.move(new_module_path / module.name / 'setup.py', new_module_path / 'setup.py')
 reset()
