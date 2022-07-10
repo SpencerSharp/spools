@@ -77,6 +77,7 @@ def build_library(module_lib):
     if main_file.exists():
         init_file = module_lib / '__init__.py'
         if not init_file.exists():
+            # what does this do
             init = '''import pkg_resources
 pkg_resources.declare_namespace(__name__)
 {}'''.format(main_file.read_text())
@@ -113,3 +114,5 @@ def reset():
     shutil.copy(base / 'README.md', build_path / 'spools' / 'README.md')
 
 reset()
+
+# TODO: Make files in build dir read-only so that i dont accidentally edit them

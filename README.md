@@ -1,5 +1,7 @@
 # Description
 
+This Readme is all a lie and nothing here works but I'm keeping it for posterity/for future reference.
+
 Spools is a personal project I've made to combine my command line tools and scripts, sync and backup my data to the cloud, and manage and automatically configure software on any machine I happen to be working on.
 
 It's currently in Version Alpha 0.2
