@@ -11,10 +11,7 @@ def flatten(to_flatten):
                 build_module(item)
             else:
                 flatten(item)
-                # print(item.name)
                 for sub in item.iterdir():
-                    # print(to_flatten)
-                    print(sub)
                     shutil.move(sub, to_flatten / sub.name)
                 shutil.rmtree(item)
 
@@ -26,10 +23,6 @@ def build_module(module):
     if module_build_path.exists():
         shutil.rmtree(module_build_path)
     make_module_setup(module)
-    # shutil.move(module, module.parent / 'tmp')
-    # shutil.move(src_path, module)
-    # (module.parent / 'tmp').rmdir()
-    # shutil.move(module / 'src', module)
 
 def make_module_setup(module):
     setup_file = module / 'setup.py'
@@ -70,9 +63,9 @@ def build_main(module_main):
     modules_dir = module_main / 'modules'
     if modules_dir.exists():
         for module in modules_dir.iterdir():
+            if module.name == '.DS_Store':
+                continue
             build_module(module)
-    # if module_main.exists():
-    #     flatten(module_main)
 
 def build_library(module_lib):
     if not module_lib.exists():
@@ -96,6 +89,7 @@ pkg_resources.declare_namespace(__name__)
     for fil in recurse:
         build_library(fil)
 
+# wtf does this function do
 def reset():
     build_path = base / 'build'
     if build_path.exists():
@@ -117,4 +111,5 @@ def reset():
 
     make_module_setup(build_path / 'spools')
     shutil.copy(base / 'README.md', build_path / 'spools' / 'README.md')
+
 reset()
