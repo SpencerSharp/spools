@@ -1,0 +1,1 @@
+class MusicRunnerDaemon extends(RunnerDaemon):
